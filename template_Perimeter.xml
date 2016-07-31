@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ugcs-Transfer>
+
+	<Version>
+		<major v="2"/>
+		<minor v="9"/>
+		<component v="DATABASE"/>
+	</Version>
+
+	<Route>
+		<modificationUuid v="3601ee18-8325-4b56-a01a-6a13d0af3dd1"/>
+		<name v="Waypoints"/>
+		<creationTime v="2016-06-27T10:39:19.041+04:00"/>
+		<altitudeType v="AGL"/>
+		<trajectoryType v="STRAIGHT"/>
+		<safeAltitude v="50.0"/>
+		<maxAltitude v="120.0"/>
+		<homeLocationSource v="FIRST_WAYPOINT"/>
+		<checkAerodromeNfz v="true"/>
+		<checkCustomNfz v="true"/>
+		<vehicleProfile>
+			<platform>
+				<code v="Emulator"/>
+			</platform>
+		</vehicleProfile>
+		<segments>
+			<modificationUuid v="d5c9939d-5adb-48b9-b9a8-47d735db9f6c"/>
+			<order v="0"/>
+			<algorithmClassName v="com.ugcs.ucs.service.routing.impl.PerimeterAlgorithm"/>
+			<figure>
+				<type v="POLYGON"/>
+				<ugcs-List name="points" type="FigurePoint" v0="id" v1="version" v2="order" v3="latitude" v4="longitude" v5="wgs84Altitude" v6="aglAltitude" v7="altitudeType">
+					<o v2="0" v3="0.9944340212158131" v4="0.4201033626964909" v6="0.0" v7="AGL"/>
+					<o v2="1" v3="0.9944438962455657" v4="0.42010295905598627" v6="0.0" v7="AGL"/>
+					<o v2="2" v3="0.9944433783882252" v4="0.4201183665820855" v6="0.0" v7="AGL"/>
+					<o v2="3" v3="0.9944313350684375" v4="0.4201160087849769" v6="0.0" v7="AGL"/>
+					<o v2="4" v3="0.9944340212158131" v4="0.4201033626964909" v6="0.0" v7="AGL"/>
+				</ugcs-List>
+			</figure>
+			<ugcs-List name="parameterValues" type="ParameterValue" v0="id" v1="version" v2="name" v3="value">
+				<o v2="speed" v3="5"/>
+				<o v2="wpTurnType" v3="SPLINE"/>
+				<o v2="height" v3="50"/>
+				<o v2="heightAgl" v3="True"/>
+				<o v2="loops" v3="1"/>
+				<o v2="actionExecution" v3="ACTIONS_EVERY_POINT"/>
+				<o v2="avoidObstacles" v3="True"/>
+				<o v2="avoidTerrain" v3="True"/>
+				<o v2="noActionsAtLastPoint" v3="False"/>
+			</ugcs-List>
+		</segments>
+		<ugcs-List name="failsafes" type="Failsafe" v0="id" v1="version" v2="reason" v3="action">
+			<o v2="GPS_LOST" v3="WAIT"/>
+			<o v2="LOW_BATTERY" v3="LAND"/>
+			<o v2="DATALINK_LOST" v3="GO_HOME"/>
+			<o v2="RC_LOST" v3="GO_HOME"/>
+		</ugcs-List>
+	</Route>
+</ugcs-Transfer>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ugcs-Transfer>
+
+	<Version>
+		<major v="2"/>
+		<minor v="9"/>
+		<component v="DATABASE"/>
+	</Version>
+
+	<Route>
+		<modificationUuid v="3b81ff00-87ac-4e24-8c1d-aabd970e7387"/>
+		<name v="AreaScan"/>
+		<creationTime v="2016-06-27T09:20:25.903+04:00"/>
+		<altitudeType v="AGL"/>
+		<trajectoryType v="STRAIGHT"/>
+		<safeAltitude v="50.0"/>
+		<maxAltitude v="120.0"/>
+		<homeLocationSource v="FIRST_WAYPOINT"/>
+		<checkAerodromeNfz v="true"/>
+		<checkCustomNfz v="true"/>
+		<vehicleProfile>
+			<platform>
+				<code v="Emulator"/>
+			</platform>
+		</vehicleProfile>
+		<segments>
+			<modificationUuid v="d792d945-506a-4699-bb59-87f3f7c85bba"/>
+			<order v="0"/>
+			<algorithmClassName v="com.ugcs.ucs.service.routing.impl.AreaScanAlgorithm"/>
+			<figure>
+				<type v="POLYGON"/>
+				<ugcs-List name="points" type="FigurePoint" v0="id" v1="version" v2="order" v3="latitude" v4="longitude" v5="wgs84Altitude" v6="aglAltitude" v7="altitudeType">
+					<o v2="0" v3="0.9944334540774227" v4="0.42009997113214953" v6="0.0" v7="AGL"/>
+					<o v2="1" v3="0.9944438506790059" v4="0.4200971646080777" v6="0.0" v7="AGL"/>
+					<o v2="2" v3="0.9944449399227282" v4="0.42011581307282253" v6="0.0" v7="AGL"/>
+					<o v2="3" v3="0.9944307227045961" v4="0.42011548526479164" v6="0.0" v7="AGL"/>
+					<o v2="4" v3="0.9944334540774227" v4="0.42009997113214953" v6="0.0" v7="AGL"/>
+				</ugcs-List>
+			</figure>
+			<ugcs-List name="parameterValues" type="ParameterValue" v0="id" v1="version" v2="name" v3="value">
+				<o v2="speed" v3="5"/>
+				<o v2="wpTurnType" v3="STOP_AND_TURN"/>
+				<o v2="height" v3="50"/>
+				<o v2="altitudeType" v3="AGL"/>
+				<o v2="sideDistance" v3="20"/>
+				<o v2="directionAngle" v3="90"/>
+				<o v2="avoidObstacles" v3="True"/>
+				<o v2="actionExecution" v3="ACTIONS_EVERY_POINT"/>
+				<o v2="overshoot" v3=""/>
+				<o v2="areaScanAllowPartialCalculation" v3="False"/>
+				<o v2="tolerance" v3="5"/>
+				<o v2="noActionsAtLastPoint" v3="True"/>
+			</ugcs-List>
+		</segments>
+		<ugcs-List name="failsafes" type="Failsafe" v0="id" v1="version" v2="reason" v3="action">
+			<o v2="GPS_LOST" v3="WAIT"/>
+			<o v2="LOW_BATTERY" v3="LAND"/>
+			<o v2="DATALINK_LOST" v3="GO_HOME"/>
+			<o v2="RC_LOST" v3="GO_HOME"/>
+		</ugcs-List>
+	</Route>
+</ugcs-Transfer>
