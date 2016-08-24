@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ugcs-Transfer>
+
+	<Version>
+		<major v="2"/>
+		<minor v="9"/>
+		<component v="DATABASE"/>
+	</Version>
+
+	<Route>
+		<modificationUuid v="34c4ad15-085d-429b-a0b9-6ddbdd79f410"/>
+		<name v="1"/>
+		<creationTime v="2016-08-14T18:21:34.954+04:00"/>
+		<altitudeType v="AGL"/>
+		<trajectoryType v="STRAIGHT"/>
+		<safeAltitude v="50.0"/>
+		<maxAltitude v="120.0"/>
+		<homeLocationSource v="FIRST_WAYPOINT"/>
+		<checkAerodromeNfz v="true"/>
+		<checkCustomNfz v="true"/>
+		<vehicleProfile>
+			<platform>
+				<code v="Emulator"/>
+			</platform>
+		</vehicleProfile>
+		<segments>
+			<modificationUuid v="046971e4-e8ac-4c74-80ae-a9ebf3f35842"/>
+			<order v="0"/>
+			<algorithmClassName v="com.ugcs.ucs.service.routing.impl.PhotogrammetryAlgorithm"/>
+			<figure>
+				<type v="POLYGON"/>
+				<ugcs-List name="points" type="FigurePoint" v0="id" v1="version" v2="order" v3="latitude" v4="longitude" v5="wgs84Altitude" v6="aglAltitude" v7="altitudeType">
+					<o v2="0" v3="0.9944403201901926" v4="0.420108235652011" v6="0.0" v7="AGL"/>
+					<o v2="1" v3="0.9944497779949186" v4="0.4201241317594498" v6="0.0" v7="AGL"/>
+					<o v2="2" v3="0.9944415318823139" v4="0.4201420514886843" v6="0.0" v7="AGL"/>
+					<o v2="3" v3="0.9944317147259252" v4="0.4201252145797366" v6="0.0" v7="AGL"/>
+					<o v2="4" v3="0.9944403201901926" v4="0.420108235652011" v6="0.0" v7="AGL"/>
+				</ugcs-List>
+			</figure>
+			<ugcs-List name="parameterValues" type="ParameterValue" v0="id" v1="version" v2="name" v3="value">
+				<o v2="speed" v3="5"/>
+				<o v2="wpTurnType" v3="STOP_AND_TURN"/>
+				<o v2="camera" v3="15"/>
+				<o v2="groundSampleDistance" v3="1"/>
+				<o v2="overlapForward" v3="60"/>
+				<o v2="overlapSide" v3="30"/>
+				<o v2="camTopFacingForward" v3="True"/>
+				<o v2="directionAngle" v3="45"/>
+				<o v2="avoidObstacles" v3="True"/>
+				<o v2="actionExecution" v3="ACTIONS_EVERY_POINT"/>
+				<o v2="generateAdditionalWaypoints" v3="False"/>
+				<o v2="overshoot" v3="0"/>
+				<o v2="altitudeType" v3="WGS84"/>
+				<o v2="areaScanAllowPartialCalculation" v3="False"/>
+				<o v2="noActionsAtLastPoint" v3="True"/>
+			</ugcs-List>
+		</segments>
+		<ugcs-List name="failsafes" type="Failsafe" v0="id" v1="version" v2="reason" v3="action">
+			<o v2="DATALINK_LOST" v3="GO_HOME"/>
+			<o v2="RC_LOST" v3="GO_HOME"/>
+			<o v2="LOW_BATTERY" v3="LAND"/>
+			<o v2="GPS_LOST" v3="WAIT"/>
+		</ugcs-List>
+	</Route>
+</ugcs-Transfer>
