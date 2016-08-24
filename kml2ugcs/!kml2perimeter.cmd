@@ -1,5 +1,5 @@
 @echo off
 
-cscript %~dp0kml2route.vbs %1 %~dp0template_Perimeter.xml
+cscript %~dp0kml2route.js %1 %~dp0template_Perimeter.xml
 
 pause
