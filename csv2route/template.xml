@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ugcs-Transfer>
 
@@ -46,53 +45,4 @@
 			<o v2="RC_LOST" v3="CONTINUE"/>
 		</ugcs-List>
 	</Route>
-=======
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ugcs-Transfer>
-
-	<Version>
-		<major v="2"/>
-		<minor v="9"/>
-		<build v="1230"/>
-		<component v="DATABASE"/>
-	</Version>
-
-	<Route>
-		<modificationUuid v="69bdc444-d502-4ee4-9933-6f8711e06b77"/>
-		<name v="Route"/>
-		<creationTime v="2016-10-01T21:04:28.483+04:00"/>
-		<altitudeType v="AGL"/>
-		<trajectoryType v="STRAIGHT"/>
-		<safeAltitude v="50.0"/>
-		<maxAltitude v="120.0"/>
-		<homeLocationSource v="FIRST_WAYPOINT"/>
-		<checkAerodromeNfz v="true"/>
-		<checkCustomNfz v="false"/>
-		<vehicleProfile>
-			<platform>
-				<code v="DjiPhantom4"/>
-			</platform>
-		</vehicleProfile>
-		<segments>
-			<modificationUuid v="688a3425-5cbe-4ac2-a174-be818134c70d"/>
-			<order v="0"/>
-			<algorithmClassName v="com.ugcs.ucs.service.routing.impl.WaypointAlgorithm"/>
-			<figure>
-				<type v="POINT"/>
-				<ugcs-List name="points" type="FigurePoint" v0="id" v1="version" v2="order" v3="latitude" v4="longitude" v5="wgs84Altitude" v6="aglAltitude" v7="altitudeType">
-					<o v2="0" v3="0.9944329975920803" v4="0.4201192487550854" v6="50.0" v7="AGL"/>
-				</ugcs-List>
-			</figure>
-			<ugcs-List name="parameterValues" type="ParameterValue" v0="id" v1="version" v2="name" v3="value">
-				<o v2="speed" v3="5"/>
-				<o v2="wpTurnType" v3="STOP_AND_TURN"/>
-				<o v2="avoidObstacles" v3="True"/>
-				<o v2="avoidTerrain" v3="True"/>
-			</ugcs-List>
-		</segments>
-		<ugcs-List name="failsafes" type="Failsafe" v0="id" v1="version" v2="reason" v3="action">
-			<o v2="RC_LOST" v3="CONTINUE"/>
-		</ugcs-List>
-	</Route>
->>>>>>> origin/master
 </ugcs-Transfer>
