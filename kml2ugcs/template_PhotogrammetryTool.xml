@@ -3,7 +3,8 @@
 
 	<Version>
 		<major v="2"/>
-		<minor v="9"/>
+		<minor v="10"/>
+		<build v="1230"/>
 		<component v="DATABASE"/>
 	</Version>
 
