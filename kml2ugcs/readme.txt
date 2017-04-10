@@ -13,5 +13,5 @@ This converter will work only on Windows.
 Good luck, 
 UgCS team
 
-(c) SPH Engineering, 2016
+(c) SPH Engineering, 2017
 
