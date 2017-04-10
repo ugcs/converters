@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------------
 
-(c) SPH Engineering, 2016
+(c) SPH Engineering, 2017
 
 KML to UgCS route converter
 
@@ -86,7 +86,7 @@ function placemark2route( kmlPlacemark, placemarkIndex, kmlFileName, routeTempla
 	ugcsRouteTemplate.selectSingleNode("//Route/name").setAttribute( "v", routeName);
 
 	// Try to find coordinates node inside of placemark's polygon
-	var kmlCoordinates = kmlPlacemark.selectSingleNode("//kml:coordinates");
+	var kmlCoordinates = kmlPlacemark.selectSingleNode(".//kml:coordinates");
 	if( null == kmlCoordinates) {
 		Log( " this placemark does not contain any coordinates, exiting...");
 		return;
@@ -112,6 +112,10 @@ function placemark2route( kmlPlacemark, placemarkIndex, kmlFileName, routeTempla
 
 	// Save modified UgCS route template as new route 
 	var ugcsRouteFileName = routeName + ".xml";
+
+	if( isFileExists(ugcsRouteFileName))	// add KML placemark index to the file name if it's not unique
+		ugcsRouteFileName = ugcsRouteFileName + " " + placemarkIndex.toString();
+
 	ugcsRouteTemplate.save( ugcsRouteFileName);
 	Log( " UgCS route saved in file '" + ugcsRouteFileName + "'");
 }
@@ -210,3 +214,15 @@ function getFileName( path) {
 
 	return fileName;
 }
+
+//----------------------------------------------------------------------------------
+// Checks file existence
+
+function isFileExists( fileName) {
+
+	var FSO = new ActiveXObject("Scripting.FileSystemObject");
+
+	return FSO.fileExists( fileName);
+}
+
+
