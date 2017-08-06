@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PL corridor - 35km.kmz</name>
+	<open>1</open>
+	<StyleMap id="inline">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline0">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline1">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>PL corridor - 35km</name>
+		<styleUrl>#inline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				40.15197154130551,-12.22422134860652,0 40.14252517478237,-12.21237236932033,0 40.13593606455088,-12.20308772994154,0 40.12029204241018,-12.18134882075454,0 40.11901087086539,-12.17947455355526,0 40.11856009966009,-12.17646289576454,0 40.11540130207209,-12.15332367412655,0 40.11354236687255,-12.13964880002746,0 40.11230741399038,-12.13217680679285,0 40.11468061202978,-12.11698941587193,0 40.11978199014122,-12.08822455771517,0 40.12982376042736,-12.03018660820593,0 40.13444510196315,-12.00474680166957,0 40.11829178030999,-11.97270278470636,0 40.11222418944456,-11.96061108243935,0 40.09877545200018,-11.9336443861318,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
