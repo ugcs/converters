@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------------
 
-(c) SPH Engineering, 2017
+(c) SPH Engineering, 2018
 
 KML to UgCS route converter
 
@@ -11,7 +11,7 @@ Arguments:
 	- KML full file name
 	- UgCS route template full file name
 
-	- Offset of flying path from centerline (optional, default = 0)
+	- Offset of flight path from centerline (optional, default = 0)
 
 ! This converter will work only on Windows.
 
@@ -25,9 +25,6 @@ if (WScript.Arguments.Count() < 2) {
 }
 
 var offset = 0;
-
-//----------------------------------------------------------------------------------
-// If arguments exists offset, set it
 
 if (WScript.Arguments.Count() === 3 && WScript.Arguments.Item(2) > 0)
 	offset = WScript.Arguments.Item(2);
